@@ -1,0 +1,59 @@
+<!--
+title: The Collection | Robann's Jewelers, Palm Desert
+desc: Engagement rings, colored gemstones, Charles Krypell, Doves, Fana, Shy Creation, Uneek, Rado watches and men's rings at Robann's Jewelers on El Paseo.
+css: collection
+js: collection
+nav: collection
+-->
+<main id="main">
+<section class="phero col">
+  <div class="wrap">
+    <div class="crumbs" data-rv><a href="index.html">Home</a> &nbsp;/&nbsp; The Collection</div>
+    <div class="split">
+      <div>
+        <div class="eyebrow" data-rv>In the showroom now</div>
+        <h1 class="h-xl" data-rv style="--d:.08s" id="colTitle">The <em>Collection.</em></h1>
+        <p class="lead" data-rv style="--d:.16s" id="colLead">A look inside the cases on El Paseo. See something you love? Tap any piece to ask about it, and our team will get right back to you.</p>
+      </div>
+      <div class="count" data-rv style="--d:.2s"><b id="count">0</b>pieces shown</div>
+    </div>
+  </div>
+</section>
+
+<nav class="filters" aria-label="Filter the collection">
+  <div class="wrap" id="filters"></div>
+</nav>
+
+<section class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="note-band" data-rv style="margin-bottom:120px">
+    <p>Looking for something <em>you don't see?</em> Our cases change often, and anything can be designed.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><a href="custom.html" class="btn btn--gold">Design It With Us</a><a href="tel:+17603418142" class="btn btn--line">Call the Showroom</a></div>
+  </div>
+</section>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__bg" data-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+    <button class="x" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="dimg" id="dImg"><img src="" alt=""></div>
+    <div class="dbody">
+      <div class="eyebrow" id="dBrand">Brand</div>
+      <h2 id="dTitle">Piece</h2>
+      <p class="desc" id="dDesc"></p>
+      <ul class="specs"><li><span>Category</span><span id="dCat"></span></li><li><span>Where</span><span>73750 El Paseo</span></li><li><span>Pricing</span><span>Ask our team</span></li></ul>
+      <form data-mock>
+        <div class="form-body">
+          <div class="form-grid">
+            <div class="field"><input type="text" placeholder=" " required><label>Your name</label></div>
+            <div class="field"><input type="tel" placeholder=" " required><label>Phone or email</label></div>
+            <div class="field full"><textarea placeholder=" " id="dMsg"></textarea><label>Message</label></div>
+          </div>
+          <div class="acts"><button class="btn btn--gold" type="submit">Ask About This Piece</button><a class="btn btn--line" href="tel:+17603418142">Call</a></div>
+        </div>
+        <p class="form-ok">Thank you. Our team will reach out shortly.</p>
+      </form>
+    </div>
+  </div>
+</div>
+</main>
