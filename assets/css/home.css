@@ -38,7 +38,7 @@
   .hero__cue{display:none}
   .hero::after{content:"";position:absolute;inset:auto 0 0;height:62%;background:linear-gradient(transparent,var(--ink) 55%);z-index:2;pointer-events:none}
 }
-@media (max-width:560px){.hero__meta>div{padding:16px 18px;font-size:.6rem;letter-spacing:.16em}.hero h1{font-size:clamp(3rem,15vw,4.4rem);margin-top:20px}.hero__acts{flex-direction:column;margin-top:32px}.hero__acts .btn{width:100%}.hero__pendant{height:60vh;top:-13vh}.hero__type{padding-top:47vh}.hero .eyebrow{font-size:.62rem;letter-spacing:.3em}.hero__sub{margin-top:22px}}
+@media (max-width:560px){.hero__meta>div{padding:16px 18px;font-size:.6rem;letter-spacing:.16em}.hero h1{font-size:clamp(3rem,15vw,4.4rem);margin-top:20px}.hero__acts{flex-direction:column;margin-top:32px}.hero__acts .btn{width:100%}.hero__pendant{height:60vh;top:-13vh}.hero__type{padding-top:47vh}.hero .eyebrow{font-size:.66rem;letter-spacing:.24em}.hero__sub{margin-top:22px}}
 
 /* ===== statement (scroll word fill) ===== */
 .statement{padding:clamp(110px,15vw,210px) 0}
@@ -257,3 +257,21 @@
 .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.92) hue-rotate(180deg) sepia(.35) saturate(.7) brightness(.9) contrast(.95)}
 .map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);pointer-events:none;width:44px;height:44px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.6);display:none}
 @media (max-width:900px){.visit__grid{grid-template-columns:1fr}.map{min-height:360px}}
+
+/* ===== mobile polish pass ===== */
+@media (max-width:600px){
+  .bento .tile{grid-column:1/-1!important}
+}
+@media (max-width:900px){
+  .step{position:relative;top:0}
+  .steps{gap:18px}
+}
+@media (max-width:560px){
+  .hero .eyebrow{font-size:.66rem;letter-spacing:.24em}
+  .hero__meta>div{font-size:.64rem;letter-spacing:.14em}
+  .statement .sig span,.clist .m,.watch p,.gem .k span{font-size:.68rem}
+  .bstage .tag{font-size:.68rem}
+  .bopts h4{font-size:.7rem}
+  .gems__pin{padding:80px 0 0}
+  .rado{padding-top:80px}
+}

@@ -53,3 +53,13 @@
 .drawer form{margin-top:30px}
 .drawer .acts{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
 @media (max-width:820px){.drawer__panel{grid-template-columns:1fr;grid-template-rows:42vh 1fr}}
+
+/* ===== mobile polish pass ===== */
+@media (max-width:760px){
+  .filters .wrap{-webkit-mask:linear-gradient(90deg,#000 85%,transparent);mask:linear-gradient(90deg,#000 85%,transparent);padding-right:40px}
+  .fbtn{font-size:.68rem;letter-spacing:.16em;padding:0 16px}
+  .fbtn sup{font-size:.62rem}
+  .item h3{font-size:.98rem}
+  .drawer .dbody{padding:26px 20px 40px}
+  .drawer .x{top:12px;right:12px}
+}

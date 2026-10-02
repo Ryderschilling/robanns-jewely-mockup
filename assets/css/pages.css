@@ -59,3 +59,13 @@
 .quote blockquote em{font-style:italic;color:var(--gold-3)}
 .quote cite{display:block;margin-top:30px;font-style:normal;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
 .bigyear{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--display);font-size:clamp(10rem,34vw,30rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(214,183,122,.09);pointer-events:none;white-space:nowrap}
+
+/* ===== mobile polish pass ===== */
+@media (max-width:900px){
+  .split2 .prose{position:static!important}
+  .phero.media .hero-img{margin-top:30px}
+}
+@media (max-width:560px){
+  .kicker,.quote cite,.value p{font-size:.72rem}
+  .chipset span{height:44px}
+}

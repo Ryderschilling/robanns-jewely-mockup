@@ -185,3 +185,14 @@ form.sent .form-ok{display:block}form.sent .form-body{display:none}
 .sparkles{position:absolute;inset:0;pointer-events:none;z-index:2}
 
 .field input[type=date]{color-scheme:dark;min-height:58px}
+
+/* ===== mobile polish pass ===== */
+@media (max-width:760px){
+  body{padding-bottom:84px}
+  .eyebrow{font-size:.7rem;letter-spacing:.3em}
+  .btn{font-size:.72rem;letter-spacing:.2em}
+  .gfoot h3{font-size:.72rem}
+  .logo .w{font-size:.56rem}
+  .crumbs{font-size:.7rem}
+  .wordmark{transform:translateY(8%)}
+}
